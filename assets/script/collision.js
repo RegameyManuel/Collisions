@@ -259,7 +259,7 @@ class Vector {
     return distance < (ball1.radius + ball2.radius);
   };
   
-  const collidingBalls = ({ width = window.innerWidth, height = window.innerHeight, parent = document.body, count =  200} = {}) => {
+  const collidingBalls = ({ width = window.innerWidth, height = window.innerHeight, parent = document.body, count =  150} = {}) => {
     const display = new Canvas(parent, width, height);
     const balls = [];
     for (let i = 0; i < count; i++) {
